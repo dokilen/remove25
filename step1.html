@@ -1,0 +1,514 @@
+<html>
+<head>
+<title>Removing Objects Step 1: Removing Object with Photopea</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000
+}
+body {
+	background-color: #d0d0d0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.style2 {
+	color: #660000;
+	font-weight: bold;
+	font-style: italic;
+}
+table.MsoTableGrid {
+	border: 1.0pt solid windowtext;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+
+-->
+</style>
+</head>
+
+<body bgcolor="#C0C0C0" vlink="#0000FF" link="#0000FF" alink="#0000FF">
+<Font face="Times New Roman">
+<table border="0" cellspacing="0" width="100%" height="1" bordercolor="#111111" cellpadding="0">
+  <tr>
+    <td width="100%" align="center" height="1"><font face="Times New Roman">
+      <p align="center"> <font size="2">Introduction <b>&nbsp;| </b>&nbsp;<a href="step2.html">Method 
+		1: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Method 2: Spot Healing Brush</a>&nbsp; |&nbsp; 
+		<a href="step4.html">Method 3: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Method 
+		4: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Method 5: Content-Aware Move</a><br>
+		<a href="step7.html">Method 6: Content-Aware Fill</a>&nbsp; |&nbsp; 
+		<a href="step8.html">Method 7: Remove</a>&nbsp; |&nbsp; 
+		<a href="step9.html">Method 8: Generative Fill</a>&nbsp; |&nbsp;
+		<a href="step10.html">Method 9: Clone 
+      Stamp</a>&nbsp; 
+		|&nbsp; <a href="step11.html">Method 10: Combining Tools</a>&nbsp; |&nbsp; 
+		<a href="exercise.html">Removing Objects Exercise</a><br>
+        </font>
+        <a href="exercise.htm" style="color: d0d0d0!important">Exercise</a></td>
+  </tr>
+  <tr>
+    <td width="100%" align="center" height="1"><Font size="6" face="Times New Roman"> <b>Removing Objects 
+      with Photoshop - Introduction</b></font></td>
+  </tr>
+</table>
+<p class="MsoNormal" style="line-height:
+normal"> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">One 
+  of the most common uses for Photoshop is to remove objects from 
+  images. Photoshop has a variety of methods to allow you to pull this off. 
+For example, let's say that you want a picture of the Roman Colosseum but you 
+don't want to capture any of the people walking around - you just want the 
+building. One thing you could do is use an option in Photoshop called image 
+stacks. This allows you to set up a camera and take multiple pictures of the 
+building over time and then combine the individual images so that only the areas 
+with no people in them in each image is used to build your people-free photo. 
+I know - cool.</span></p>
+<p class="MsoNormal" style="line-height:
+normal"> 
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Image stacks are great, but only work if you have multiple images from a single 
+spot. What if you only have a single image? In this 
+  lesson, we will look at nine different methods (ten if we combine multiple 
+methods) to remove objects from an image 
+  in Photoshop. We will start with an aerial shot of the Roman Colosseum littered 
+  with tourists and cover multiple ways to remove the people so that all we are 
+  left with is the building itself. We will go from this...</span></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <img border="0" src="1/01.jpg" width="500" height="468"></p>
+<p class="MsoNormal" style="line-height: normal; " align="center"> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">To this...</span></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+<img border="0" src="1/06.jpg" width="500" height="432"></p>
+<p class="MsoNormal" style="line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Note 
+that the 
+  people and vehicles are missing from the bottom picture. We will work together to 
+  cover various ways to remove items, and then you will work on your own to 
+  complete the removal of the people and various other objects. When we finish these instructions, you will 
+  select an image of your own from a group of aerial photos and work independently to remove the people 
+and objects from it 
+  using what you have learned in this lesson.</span></p>
+</font> <Font face="Times New Roman">
+<table border="0" width="100%" cellspacing="10" cellpadding="10">
+  <tr>
+    <td bgcolor="#FDE9D9"><Font face="Times New Roman">
+      <p class="MsoNormal" style="line-height: normal; "> <span style="font-size: 12.0pt; line-height: 115%; font-family: 'Times New Roman',serif"> Keep in mind that while we will be using 
+      Photoshop's tools to clean up an aerial 
+        photo of a landmark, that the techniques we will cover can be used to remove 
+        anything from any image. Got a picture with a pole in the background that looks 
+        like it is coming out of your head? No problem. Does it turn out there was a 
+        person walking through your fantastic beach photo? Piece of cake. No 
+		longer dating that loser and want to remove them from your vacation 
+		photos? Can do.</span></p>
+      <p class="MsoNormal" style="line-height: normal; " align="center"> 
+		<span style="font-size: 12.0pt; line-height: 115%; font-family: 'Times New Roman',serif; font-weight:700"> When you finish this lesson, removing any object from any image will not be a 
+        problem.</span></p></td>
+  </tr>
+</table>
+</font> <Font face="Times New Roman,serif" color="#800000">
+<p class="MsoNormal" style="line-height: normal; " align="center"> <b>Note that 
+this tutorial assumes that you have used Photoshop before and are familiar its 
+basic function and thus will not spend time on getting you familiar with the 
+Photoshop environment. If you have never used Photoshop before, you should stop 
+this tutorial now and work through a Photoshop basics tutorial so that you can 
+learn the various parts of the interface and all of Photoshop's basic functions. 
+You will get much more out of this tutorial if you are not lost.</b></p>
+</font> <Font face="Times New Roman">
+<hr>
+<p class="MsoNormal" style="line-height: normal; "> 
+<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Let's get 
+  started by getting the picture we will be using open in Photoshop.</span></p>
+<ol>
+  <li>Click <a target="_blank" href="1/Colosseum.jpg">HERE</a> to open the full-sized Colosseum image 
+  (it will open in a new browser tab)</li>
+  <li>Right-click the Colosseum image and click Save image as... and save the Colosseum 
+	image to your device</li>
+  <li>Open Photoshop</li>
+</ol>
+<p>Before we open our image, let's reset the Photoshop workspace to make sure 
+that everyone sees the same thing and everything is in the same place.</p>
+<ol start="4">
+  <li>On the Menu bar, click Window...<br>
+    <img border="0" src="1/20.jpg" width="346" height="43"><br>
+	This will open the Window menu</li>
+	<li>In the Window menu, point at Workspace and click Reset Essentials...<br>
+    <img border="0" src="1/21.jpg" width="467" height="192"></li>
+	<li>In the file select window, click Open...<br>
+    <img border="0" src="1/03.jpg" width="191" height="170"></li>
+  <li>Go to where you saved the Colosseum image file and double-click it - the file should open in Photoshop</li>
+</ol>
+<hr>
+<p class="MsoNormal" style="line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">
+Photoshop 
+  gives us nine basic ways to remove items in an image (ok, full disclosure 
+time here: there are actually a few 
+  more ways, but they require specific editing that goes beyond simply removing 
+an object or require the use of multiple images, and since we only have a single image, 
+  we'll go with these):</span></p>
+<ol type="I" style="padding-left: 100px;">
+  <li> <font color="#800080" size="4"> 
+	<span style="font-family: 'Times New Roman',serif; font-weight:700">&nbsp;Brush/Pencil Tool</span></font><ol type="a">
+      <li> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Paints 
+        with the Foreground color</span></li>
+      <li> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Can only 
+        color over an area with solid color</span><Font face="Times New Roman,serif"><li>Should only be used on small areas</li>
+    </ol>
+    </font> 
+  <li><font color="#800080" size="4">
+	<span style="font-family: 'Times New Roman',serif; font-weight: 700">&nbsp;Spot Healing Brush Tool</span></font><ol type="a">
+      <li> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Replaces 
+        the item being drawn over or clicked on by blending the area with the 
+        surrounding pixels</span><li> <Font face="Times New Roman,serif">Works 
+		best on backgrounds with low detail, like sky or ocean<li>Should only be used on small areas</li>
+    </ol>
+    </font> 
+  <li> <font color="#800080" size="4">
+	<span style="font-family: 'Times New Roman',serif; font-weight: 700">&nbsp;Healing 
+    Brush Tool</span></font><ol type="a">
+      <li> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Takes the 
+        texture from the area you sample and the color from the area you are painting to 
+        and combines them</span></li>
+		<li> <Font face="Times New Roman,serif">
+		Specifically designed to fix flaws such as dust spots, scratches, and 
+		wrinkles</font></li>
+      <li> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Does not 
+        work on areas with an edge</span></li>
+</font>
+    </ol>
+    <Font face="Times New Roman">
+    <li> <font color="#800080" size="4">
+	<span style="font-family: 'Times New Roman',serif; font-weight: 700">&nbsp;Patch Tool</span></font><ol type="a">
+      <li> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Allows you 
+        to make a selection and move that selection to another area and have 
+      Photoshop 
+        replace the selection area with the new area</span></li>
+      <li>Automatically blends the two areas</li>
+		<li>Each time you use it, you get a slightly different result (even when 
+		used on the same location)</li>
+    </ol>
+    <li> <font color="#800080" size="4">
+	<span style="font-family: 'Times New Roman',serif; font-weight: 700">&nbsp;Content-Aware Move Tool</span></font><ol type="a">
+      <li> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Makes a 
+        selection and moves that selection to another location with the original spot 
+        being filled based on the surrounding pixels</span></font><Font face="Times New Roman,serif"><li> Generally used to move objects within an image, but can be used to 
+		cover up objects</font><Font face="Times New Roman"><li> 
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Simply 
+        pressing Delete while using this will activate the Content-Aware Fill</span></li>
+    </ol>
+    </font><Font face="Times New Roman">
+	<li><font color="#800080" size="4">
+	<span style="font-family: 'Times New Roman',serif; font-weight: 700">&nbsp;Content Aware Fill</span></font><ol type="a">
+		<li>
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Fills a 
+        selection based on the surrounding pixels</span></li>
+		<li><Font face="Times New Roman,serif">Clones other parts of the image 
+		to replace your selection</font></li>
+		<li>
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Does not blend 
+		colors and can create blurs or distortion</span></li></font>
+	</ol><Font face="Times New Roman">
+	<li><font color="#800080" size="4">
+	<span style="font-family: 'Times New Roman',serif; font-weight: 700">&nbsp;Remove 
+	Tool</span></font><ol type="a">
+		<li>Allows you to draw over an object and Photoshop will use 
+		artificial intelligence to evaluate the image and remove the object</li>
+		<li>Can be used multiple times on the same area to 'clean up' any issues</li>
+		<li>Can be a great first tool to use when removing objects, and then use 
+		one of the other methods to fix any remaining issues</li>
+	</ol></li>
+	<li><font color="#800080" size="4">
+	<span style="font-family: 'Times New Roman',serif; font-weight: 700">&nbsp;Generative 
+	Fill</span></font><ol type="a">
+		<li>Uses artificial intelligence to generate image elements that 
+		maintain the lighting, perspective, and color of the original image</li>
+		<li>Can be used to generate foreground or background elements that are 
+		completely unrelated to the original image (for example, you can add a 
+		unicorn to an image that has no other animals in it)</li>
+		<li>Since artificial intelligence generated objects are far from 
+		perfect, areas created with Generative Fill may have composition issues 
+		when closely inspected</li>
+	</ol></li>
+	<li><font color="#800080" size="4">
+	<span style="font-family: 'Times New Roman',serif; font-weight: 700">&nbsp;Clone 
+	Stamp Tool</span></font><ol type="a">
+		<li>
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Replaces 
+        the area being drawn on with pixels from the sample area</span></li>
+		<li>Often requires lots of clicking</li>
+		<li>Does not naturally blend, so you have to do that manually</li>
+	</ol></li>
+
+</ol></font> <Font face="Times New Roman,serif">
+<p class="MsoNormal" style="line-height: normal; "> Don't worry if the above descriptions are vague and difficult to follow - they 
+  are simply an overview. When you have experience using each tool, everything will make sense.</p>
+</font> <Font face="Times New Roman">
+<hr>
+<p class="MsoNormal" style="line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">Below is 
+  a reference table for how each of the nine options work, 
+  to help you decide when to use each:</span></p>
+<div align="center">
+  <table border="1" cellspacing="0" cellpadding="0">
+    <tr>
+      <td valign="top" width="300">&nbsp;</td>
+      <td valign="top" width="150" bgcolor="#000000"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+		<font color="#FFFFFF"> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Brush/Pencil</span></font></td>
+      <td valign="top" width="150" bgcolor="#000000"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+		<font color="#FFFFFF"> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Spot Healing Brush</span></font></td>
+      <td valign="top" width="150" bgcolor="#000000"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+		<font color="#FFFFFF"> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Healing Brush</span></font></td>
+      <td valign="top" width="150" bgcolor="#000000"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+		<font color="#FFFFFF"> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Patch 
+		Tool</span></font></td>
+      <td valign="top" width="150" bgcolor="#000000"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+		<font color="#FFFFFF"> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Content-Aware Move</span></font></td>
+      <td valign="top" width="150" bgcolor="#000000"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+		<font color="#FFFFFF"> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Content Aware Fill</span></font></td>
+      <td valign="top" width="150" bgcolor="#000000" align="center">
+		<p class="MsoNormal" align="center" style="line-height: normal">
+		<font color="#FFFFFF">
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">
+		Rem</span></font><span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"><font color="#FFFFFF">ove 
+		Tool</font></span></td>
+      <td valign="top" width="150" bgcolor="#000000"> <Font face="Times New Roman">
+		<p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+		<font color="#FFFFFF">
+		Generative Fill</font></font></td>
+      <td valign="top" width="150" bgcolor="#000000">
+		<p align="center"><font color="#FFFFFF" face="Times New Roman">
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> 
+		Clone Stamp Tool</span></font></td>
+    </tr>
+    <tr>
+      <td valign="top" align="center"><p class="MsoNormal" style="line-height: normal; "> 
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif; font-weight:700"> Blending of colors</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+</font>
+		<Font face="Times New Roman,serif">
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> 
+		Y<span style="font-family: 'Times New Roman',serif">es</span></td>
+</font>
+		<Font face="Times New Roman">
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+    </tr>
+    <tr>
+      <td valign="top" align="center"><p class="MsoNormal" style="line-height: normal; "> 
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif; font-weight:700"> Requires sample</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+    </tr>
+    <tr>
+      <td valign="top" align="center"><p class="MsoNormal" style="line-height: normal; "> 
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif; font-weight:700"> Requires selection</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+      <td valign="top" align="center" bgcolor="#FBD4B4">Yes</td>
+      <td valign="top" align="center" bgcolor="#FBD4B4">Yes</td>
+      <td valign="top">
+		<p class="MsoNormal" align="center" style="line-height: normal">
+		<span style="font-family: 'Times New Roman',serif">No</span></td>
+    </tr>
+    <tr>
+      <td valign="top" align="center"><p class="MsoNormal" style="line-height: normal; "> 
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif; font-weight:700"> Requires selection move</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+      <td valign="top" bgcolor="#FBD4B4"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> Yes</span></td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top"><p class="MsoNormal" align="center" style="text-align: center; line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif"> No</span></td>
+    </tr>
+    <tr>
+      <td valign="top" align="center">
+		<Font face="Times New Roman">
+		<span style="font-size: 12.0pt; font-family: 'Times New Roman',serif; font-weight:700"> 
+		Safe near an edge</span></font></td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+    </tr>
+    <tr>
+      <td valign="top" align="center"><p class="MsoNormal" style="line-height: normal; "> 
+		<b>Uses Artificial Intelligence</b></td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" align="center">No</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" bgcolor="#FBD4B4" align="center">Yes</td>
+      <td valign="top" align="center">No</td>
+    </tr>
+  </table>
+</div>
+<p class="MsoNormal" style="line-height: normal; "> <span style="font-size: 12.0pt; font-family: 'Times New Roman',serif">
+No two tools work the same and there are a wide variety of possible tools and 
+uses. While the table makes it look like some tools do work the same, how they 
+pull off the removal is unique to each. To learn how each of these tools work - and more importantly 
+  when it is most efficient to use each one - we will work with our image of the Colosseum to 
+  practice each tool.</span></p><hr>
+</font>
+<Font face="Times New Roman,serif">
+</font>
+<Font face="Times New Roman">
+<p class="MsoBodyText">Before we actually start editing our image, let's make a 
+copy of the <i>Background</i> layer that contains our Colosseum image. It is 
+generally a bad idea to make edits that destroy part of an image (called 
+'destructive editing') without having a way to get parts back to the original 
+form and fix mistakes. There are several different methods in 
+Photoshop to allow us to make edits without destroying areas of the image 
+(called 'non-destructive editing'), but one of the quickest and easiest ways is 
+to simply make a copy of the image layer and make all of our edits on the new 
+layer. Let's do that now.</p>
+<ol start="8">
+	<li>
+	<p class="MsoBodyText">In the Layers panel, make sure the <i>Background</i> 
+	layer is selected (you only have one layer, so it must be selected)...<br>
+    <img border="0" src="1/09.jpg" width="230" height="167"><br>
+	Remember that you can always tell which layer is currently selected because 
+	it will be highlighted in gray</p></li>
+	<li>
+	<p class="MsoBodyText">Right-click the <i>Background</i> layer and in the 
+	pop-up menu click Duplicate Layer...<br>
+    <img border="0" src="1/10.jpg" width="240" height="263"><br>
+	This will open the Duplicate Layer window...<br>
+    <img border="0" src="1/11.jpg" width="247" height="127"></p></li>
+	<li>
+	<p class="MsoBodyText">In the As: field, change the name to Working...<br>
+    <img border="0" src="1/12.jpg" width="326" height="169"></p></li>
+	<li>
+	<p class="MsoBodyText">Click OK - notice that Photoshop creates the new 
+	layer for you in the Layers panel...<br>
+    <img border="0" src="1/14.jpg" width="243" height="149"></p></li>
+</ol>
+<p class="MsoBodyText">Let's save our image as a Photoshop file.</p>
+<ol start="12">
+  <li>In Photoshop, click File and then Save as...</li>
+	<li>Save the image as 
+    <b>Remove_yourlastname.psd</b> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">(replace yourlastname with your actual last 
+	name so I know that it is yours) on your device</span><br>
+	(HINT: remember that Photoshop will add the .psd file extension 
+    for you automatically, so don't actually type that in, but you might need to change the Save as type: option to Photoshop 
+    (*.PSD;*.PDD;*.PSDT) - the first option in the list - to get it to save 
+    correctly)</li>
+</ol>
+<p>
+<Font face="Times New Roman,serif">
+Each of the following 10 Tutorial 
+Steps of this lesson are short and designed to give you quick experience using 
+a specific tool/technique. You will get an opportunity to practice with each 
+tool/technique when you reach Method 10: Combining Tools where you will remove the remaining people from the Colosseum image, 
+and then work with another image before you submit both to be graded.</font></p>
+<div align="center">
+  <center>
+  <table border="3" cellpadding="2" cellspacing="0" style="border-collapse: collapse" bordercolor="#FF0000" width="80%" id="AutoNumber1">
+    <tr>
+      <td width="100%" align="center">
+<Font face="Times New Roman,serif">
+      <u><font size="5">Keep something very important in mind as you go thru this project: 
+</font> <br>
+</u>Our 
+      goal here is to be able to remove objects from images <br>
+<b>WITHOUT VIEWERS 
+      BEING ABLE TO TELL THAT ANYTHING WAS REMOVED</b>.<p>
+      Have a look at this image:<Font face="Times New Roman"><br>
+    <img border="0" src="1/07.jpg" width="480" height="323"></font></p>
+</font>
+<Font face="Times New Roman">
+      <p>Just looking at it, can you tell what has been removed and from where?<p>
+Don't cheat and scroll down, actually look at the image and see if you can tell 
+what has been changed.<p>When you think you know, go ahead and scroll down to 
+take a look at 
+the original image...<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Keep scrolling...<p>&nbsp;&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; A little more...<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; Scroll scroll scroll...<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; Almost there...<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
+<p>Here it is...<p>
+    <img border="0" src="1/08.jpg" width="480" height="320"><p>Now be 
+honest - how many of you thought that an entire SUV was missing? The 
+disappearing vehicle was actually pulled off by Jesus Ramirez, and as you can 
+see, he did a great job (I did some adjustments here and there to make it 
+look really awesome).<p>This is the level of quality we are shooting for - the 
+viewer of the image should be unable to tell that anything was edited out of the 
+photo. As you work thru this project (and when working on the exercises that 
+follows), keep in mind that you NEVER want it to be obvious that something has 
+been removed. If it is obvious that the image has been edited, it takes you out 
+of being immersed in the image, kind of like when someone in a movie looks at 
+the camera. We are shooting for realism, so take the time to make it look good.</td>
+    </tr>
+  </table>
+  </center>
+</div>
+</font>
+<Font face="Times New Roman,serif">
+</font>
+<Font face="Times New Roman">
+<p>
+In the next step, Method 1: Brush/Pencil, we will use the 
+  Brush/Pencil tool to make some basic adjustments.</p>
+<hr>
+<div align="center">
+  <center>
+    <table border="0" bordercolor="#111111" width="100%" cellpadding="0">
+      <tr>
+        <td><font face="Times New Roman">
+      <p align="center"> <font size="2">Introduction <b>&nbsp;| </b> &nbsp;<a href="step2.html">Method 
+		1: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Method 2: Spot 
+		Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Method 3: Healing 
+		Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Method 4: Patch</a>&nbsp; |&nbsp;
+		<a href="step6.html">Method 5: Content-Aware Move</a><br>
+		<a href="step7.html">Method 6: Content-Aware Fill</a>&nbsp; |&nbsp;
+		<a href="step8.html">Method 7: Remove</a>&nbsp; |&nbsp;
+		<a href="step9.html">Method 8: Generative Fill</a>&nbsp; |&nbsp;
+		<a href="step10.html">Method 9: Clone Stamp</a>&nbsp; |&nbsp;
+		<a href="step11.html">Method 10: Combining Tools</a>&nbsp; |&nbsp; 
+		<a href="exercise.html">Removing Objects Exercise</a><br>
+        </font>
+        <a href="exercise.htm" style="color: d0d0d0!important">Exercise</a></td>
+      </tr>
+    </table>
+  </center>
+</div>
+</font>
+</body>
+</html>
