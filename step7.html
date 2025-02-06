@@ -1,0 +1,592 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Removing Objects Step 7: Content Aware Fill</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000
+}
+body {
+	background-color: #d0d0d0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.style2 {
+	color: #660000;
+	font-weight: bold;
+	font-style: italic;
+}
+table.MsoTableGrid {
+	border: 1.0pt solid windowtext;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#C0C0C0" vlink="#0000FF" link="#0000FF" alink="#0000FF">
+<Font face="Times New Roman">
+<table border="0" cellspacing="0" width="100%" height="1" bordercolor="#111111" cellpadding="0">
+  <tr>
+    <td width="100%" align="center" height="1"><font face="Times New Roman">
+      <p align="center"> <font size="2"><a href="step1.html">Introduction</a> <b>&nbsp;| </b> 
+		&nbsp;<a href="step2.html">Method 1: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Method 
+		2: Spot Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Method 3: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Method 
+		4: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Method 5: Content-Aware Move</a><br>
+		Method 6: Content-Aware Fill&nbsp; |&nbsp; 
+		<a href="step8.html">Method 7: Remove</a>&nbsp; |&nbsp; 
+		<a href="step9.html">Method 8: Generative Fill</a>&nbsp; |&nbsp;
+		<a href="step10.html">Method 9: Clone 
+      Stamp</a>&nbsp; 
+		|&nbsp; <a href="step11.html">Method 10: Combining Tools</a>&nbsp; |&nbsp; 
+		<a href="exercise.html">Removing Objects Exercise</a><br>
+        </font><a href="exercise.htm" style="color: d0d0d0!important">Exercise</a></td>
+  </tr>
+  <tr>
+    <td width="100%" align="center" height="1"><font size="6"><b>
+<Font face="Times New Roman">
+    Method 6: </font>Content-Aware Fill</b></font></td>
+  </tr>
+</table>
+<p class="MsoNormal" style="line-height:
+normal"> <span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"> 
+As mentioned in the previous Step, the Content-Aware Fill is not actually a tool 
+on the toolbar, but instead is included under the Edit menu and is part of the 
+Fill command. Normally, the Fill 
+command simply fills a selection with color, but when using Content-Aware Fill, 
+Photoshop looks at the pixels surrounding a selection and fills that selection area with something that matches 
+what is around it. This time, Photoshop does not try to blend the pixels together, 
+  so this method works great on areas with lines and edges. Using the 
+  Content-Aware Fill works slightly different from the other tools that we have 
+  used so far, so let's get some practice with it.</span></p>
+<ol>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Click the Lasso Tool...<br>
+	</span>
+	<img border=0 width=41 height=51
+src="7/01.jpg" v:shapes="Picture_x0020_55"></li>
+	<li>
+	Set the Lasso Tool options bar to match the image below...<br>
+	<img border=0 width=551 height=35
+src="7/13.jpg" v:shapes="Picture_x0020_55"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Staying in the same region of the image 
+	that we have been working with, click and drag to make a selection area 
+  of the people indicated below...<br></span>
+	<img border=0 width=872 height=302
+src="7/02.jpg" v:shapes="Picture_x0020_56"><br>
+	Remember that if you want to select two non-connected areas that you first 
+	draw a circle around one area, like the person on the left, and then press 
+	and hold the Shift key as you draw a circle around the other area, like the person on the right</li>
+</ol>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Be 
+careful here that you draw your selection area around only the items that you 
+want to remove. If you try to draw a large circle around both people like 
+this...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+	<img border=0
+src="7/05.jpg" v:shapes="Picture_x0020_56" width="431" height="257"></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">When you 
+apply the Content-Aware Fill you may get something like this...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+	<img border=0
+src="7/06.jpg" v:shapes="Picture_x0020_56" width="431" height="258"></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">While at 
+first you may be thinking that the line looks good, notice that the line is 
+misshapen on the right side of the selection area. And while yes, the line does 
+go continuously from left to right, the area of the line that is distorted makes 
+it obvious that we have edited the image - which is exactly what we are trying 
+to avoid. This is 
+obviously not an ideal result because we will have to take the time to 
+correct the bad spot. It would be great if we could remove the 
+people and didn't have to worry about fixing a messed up line. Luckily for us, if 
+we make a good enough selection, like the one in direction 3 above, Photoshop 
+will help us out with the line. Keep going to see how this works.</p>
+<ol start="4">
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+    Make sure you have an accurate selection, and then click Edit on the menu bar and then click Fill...<br>
+	</span>
+	<img border=0 width=255 height=394
+src="7/03.jpg" v:shapes="Picture_x0020_58"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><br>This will open the Fill window...<br>
+	</span>
+	<img border=0 width=351 height=296
+src="7/04.jpg" v:shapes="Picture_x0020_59"></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Set 
+  the options to match the image above - especially notice that Contents: is set 
+    to Content-Aware</span></li>
+	<li>
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Click OK 
+	- notice that the people are now gone, but 
+	that Photoshop has continued the line...<br></span>
+	<img border=0 width=837 height=283
+src="7/07.jpg" v:shapes="Picture_x0020_60"><br>
+    If it didn't work right for you just keep reading - what follows will 
+    explain how to fix any issues you are having</li>
+</ol>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+Photoshop was 
+able to look at the surrounding pixels and recognize that the 
+  people do not belong, but since there is a line running through the rest of the 
+  image - and most importantly there was a line segment between the people, 
+Photoshop continued the line.</span></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+By the way, if it did not work for you and you have something like this...</span></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+	<img border=0 width=528 height=288
+src="7/08.jpg" v:shapes="Picture_x0020_60"></p>
+</font>
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Don't 
+panic - you didn't do anything wrong. Photoshop can be a little picky with how it 
+applies the Content-Aware Fill.&nbsp;Usually if you undo and redo the 
+Content-Aware Fill you can fix the problem. Follow 
+the directions below if Photoshop did not remove one or both of your people.</p>
+</font>
+<Font face="Times New Roman">
+<ol type="I" style="padding-left: 20px;">
+	<li>
+	<Font face="Times New Roman,serif">Press Ctrl+Z to undo the Fill - this 
+	should place both people back into your image</font></font><Font face="Times New Roman,serif"><li>
+Press Shift+F5 to reapply the Content-Aware Fill</li>
+	<li>
+If 
+	it doesn't work this time, try reapplying the Content-Aware Fill 
+	several times to see if it works (yes, it may work one time and not the next 
+- Photoshop reapplies the transformation algorithm each time you apply the fill, 
+so it is possible to get different results through multiple applications with 
+the same selection)</li>
+	<li>
+If 
+	after reapplying the Content-Aware Fill multiple times you still do not have 
+	a complete line, you will need to deselect (Ctrl+D) and redraw your 
+	selection area with the Lasso Tool - try to be a little more accurate with 
+	your selection this time</li>
+	<li>
+Press Shift+F5 to reapply the Content-Aware Fill</li>
+</ol>
+<hr>
+<ol start="7">
+  <li>
+<Font face="Times New Roman">
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">
+When the people are gone and the line looks good, press Ctrl+D to deselect the image</span></font></li>
+</ol>
+<hr>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Keep in 
+mind when using the Content-Aware Fill that Photoshop is not blending anything 
+together this time. It is simply looking at the area surrounding your selection 
+and trying to use that area to replace your selection. Also be aware that it is 
+not necessary for the area around the selection to be simple like with the image 
+we are using (we just have gray concrete and a white line). For example, we can use Content-Aware Fill on images like the one below...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=679 height=472
+src="7/09.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">As long 
+as there are similar elements around the object that we are removing (in the picture above, 
+notice that there are trees, sky, and water on both sides of the balloon), 
+Photoshop can handle filling in the spot. 
+If you look closely, you can see how Photoshop replaced the balloon...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=239 height=150
+src="7/19.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">The 
+black outline is where the balloon was, and the red arrows are showing that to 
+remove the balloon, Photoshop simply made a copy of the tree on the left and 
+placed it in the center over the balloon. This method works great if things are 
+generally the same around the selection, but be careful. If there 
+is a collection of different objects around your selection you will get 
+unexpected results. Consider the image below...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=595 height=333
+src="7/10.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Let's 
+say we want to remove the dark red car with the tan roof in the middle. If we make a 
+selection with the Lasso Tool...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=597 height=334
+src="7/11.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">And then 
+apply the Content-Aware Fill, this is what we get...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=596 height=333
+src="7/12.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Notice 
+that not only did we <i>not</i> get a picture of the junkyard with the car missing, 
+but that Photoshop simply pulled parts of other cars from around our selection 
+and used them to cover the original car...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=596 height=333
+src="7/14.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">The 
+point here is that if what we are removing is surrounded by other objects, then 
+the Content-Aware Fill will not work. But if our subject has pretty much the 
+same thing on both sides...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=661 height=355
+src="7/15.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=934 height=287
+src="7/16.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=703 height=335
+src="7/17.jpg" v:shapes="Picture_x0020_60"></font></p>
+</font>
+<Font face="Times New Roman">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="left">
+Then we can get good results.
+It even works on images such as the one below...</p>
+</font>
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=919 height=336
+src="7/18.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Photoshop 
+was able to recognize that there were windows on either side of the cat and did a pretty 
+good job of removing him. Yeah, the brick lines are not perfect, but it is 
+much easier to use Content-Aware Fill to remove the cat and then correct those 
+lines using one of the other tools we've discussed then it is to try and remove the cat through other means.</p>
+<hr>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+At this point you may be thinking 'what if I want to get rid of an object but I 
+don't want Photoshop to use all of the pixels around the object, just some of 
+them'. Well, that's a great point and it leads us to our next tool, which you 
+might have noticed and wondered about all the way back in direction 4. When we 
+opened the Edit menu and went to Fill, sitting just two options below that is 
+something called Content-Aware Fill. So if that was an option in the menu, why 
+didn't we use it first? The answer is simple, it is a more complicated tool that 
+takes a little more explanation, but actually works pretty much the same as using Content-Aware Fill from the Fill window. 
+Since using Content-Aware Fill from the Fill window is easier, it is how most 
+people do it.</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+When we use the Content-Aware Fill option of the Edit menu, we are able to 
+define exactly what areas of the image Photoshop should use to fill in our 
+selection area. For most of the people and objects we want to remove in our 
+Colosseum image the Content-Aware Fill option in the Fill window will work just 
+fine. So let's get some experience with this tool by removing something from our 
+image that will not look good using the Content-Aware Fill option in the Fill 
+window.</p>
+<ol start="8">
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+<Font face="Times New Roman">
+	Scroll to the top right-hand corner of the image and locate the white 
+building circled in the image below...<br>
+	<img border=0 width=431 height=385
+src="7/20.jpg" v:shapes="Picture_x0020_60"></font></p>
+  </li>
+</ol>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+If we make a selection of this building (don't actually make a selection at this 
+point, just keep reading to see what happens)...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=272 height=177
+src="7/21.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+and use the Content-Aware option from the Fill window, this is what we get...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=278 height=217
+src="7/22.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Obviously, this is less than great as the solid tree placed in the middle of the 
+road makes it painfully obvious that we have made an edit here. Let's use the 
+Content-Aware Fill option of the Edit menu to remove the building and see how it 
+goes.</p>
+<ol start="9">
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Make a selection of the white building...<br>
+<Font face="Times New Roman">
+	<img border=0 width=272 height=177
+src="7/21.jpg" v:shapes="Picture_x0020_60"></font></p>
+  </li>
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Click Edit on the menu bar and then select Content-Aware Fill...<br>
+<Font face="Times New Roman">
+	<img border=0 width=255 height=409
+src="7/23.jpg" v:shapes="Picture_x0020_60"><br>
+</font></font>
+<Font face="Times New Roman">
+The Content-Aware Fill panel will take over the workspace...<br>
+	<img border=0 width=980 height=575
+src="7/24.jpg" v:shapes="Picture_x0020_60"></font></p>
+  </li>
+</ol>
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+The window is divided into 3 parts:</p>
+<ul>
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+The left side contains your selection (in this case the white building) and a green 
+tint over the image - that green tint represents the area that Photoshop is using to decide 
+how to fill your selection</p>
+  </li>
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+The center section is giving you a preview of what your image will look like if 
+you Apply the Content-Aware Fill as it is currently selected</p>
+  </li>
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+The right side allows you to make changes to various settings</p>
+  </li>
+</ul>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+The first thing we want to do is to make sure that any changes we make get 
+applied to our Working layer. Photoshop gives us the option of 
+applying our changes to a new layer (which will require us to merge the new 
+layer with our current layer later on, and we don't want to bother with that), a 
+duplicate layer, or on to our current layer. Let's set the Output To option to 
+current layer to save ourselves some time later on.</p>
+<ol start="11">
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+In the Output Settings section on the right side of the window, change the 
+Output To option to Current Layer...<br>
+<Font face="Times New Roman">
+	<img border=0 width=276 height=137
+src="7/36.jpg" v:shapes="Picture_x0020_60"></font></p>
+  </li>
+</ol>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Now let's look at some of the other sections on the right side of the window. 
+The top option on the right is called Sampling Area Overlay...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=260 height=138
+src="7/25.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Sampling Area refers to the parts of image that are currently tinted green, and 
+indicated the areas that Photoshop will use when filling in our building.
+This section allows us to do things like change the color and opacity of the 
+sampling area. We don't really want to mess with any of this stuff so leave it 
+alone. What we do what to mess with is the Sampling Area Options section (which 
+by default should be expanded) just below the Sampling Area Overlay section. By 
+default the Auto option should be selected...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=238 height=93
+src="7/26.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Let's look first at the Rectangular and Custom options to see what they do 
+before using the Auto option to replace our building.</p>
+<ol start="12">
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Click the word Rectangular to select that option...<br>
+<Font face="Times New Roman">
+	<img border=0 width=256 height=85
+src="7/41.jpg" v:shapes="Picture_x0020_60"></font></p>
+  </li>
+</ol>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+The Rectangular option simply means that Photoshop 
+is using a rectangular region of the image as source material to fill your 
+selection...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=373 height=382
+src="7/27.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+With the rectangular region in green above as our source, this is how Photoshop 
+is replacing our building...</p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    " align="center">
+<Font face="Times New Roman">
+	<img border=0 width=389 height=286
+src="7/28.jpg" v:shapes="Picture_x0020_60"></font></p>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Again, not that great. Let's try something else.</p>
+<ol start="13">
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Click the Custom option...<br>
+<Font face="Times New Roman">
+	<img border=0 width=275 height=111
+src="7/29.jpg" v:shapes="Picture_x0020_60"></font><br>
+Photoshop should give you the following pop-up message...<br>
+<Font face="Times New Roman">
+	<img border=0 width=333 height=150
+src="7/30.jpg" v:shapes="Picture_x0020_60"></font></p>
+  </li>
+</ol>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+With the Custom option selected, Photoshop wants us to paint over our image to 
+define the area to use to fill our selection. This will work great for some 
+images, but for most images the third option - Auto - works best. Let's skip 
+using the Custom option and go straight to Auto (the Auto option will require us 
+to paint on our image to get things to be just right, so we will get some 
+experience with that).</p>
+<ol start="14">
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Click OK to remove the pop-up message</p>
+  </li>
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+Click the Auto option...<br>
+<Font face="Times New Roman">
+	<img border=0 width=274 height=104
+src="7/31.jpg" v:shapes="Picture_x0020_60"><br>
+With this option selected, Photoshop will look at the area immediately 
+surrounding your selection and highlight (turn green) an area that it thinks 
+would be best to use...<br>
+	<img border=0 width=683 height=250
+src="7/32.jpg" v:shapes="Picture_x0020_60"><br>
+As you can see above, the selection that Photoshop chose on the left creates 
+basically a big smudge on the right...not really what we want</font></p>
+  </li>
+</ol>
+</font>
+<Font face="Times New Roman">
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+The area that Photoshop chose was based on the pixels immediately surrounding 
+our selection - Photoshop actually has no way of knowing what the subject of our image is 
+or what will actually look best, it is simply using the pixels adjacent 
+to our selection as a starting point. Let's fine-tune the green area to get a 
+better result.</p>
+</font>
+<Font face="Times New Roman,serif">
+<ol start="16">
+  <li>
+<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">
+On the Options bar, select the Add to overlay area option...<br>
+<Font face="Times New Roman">
+	<img border=0 width=292 height=58
+src="7/33.jpg" v:shapes="Picture_x0020_60"><br>
+With this little plus icon selected, any area we paint over in our image will be added to the 
+overlay (will be added to the green area)</font></p>
+  </font>
+	<Font face="Times New Roman">
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Use the [ and ] keys to adjust the size of your brush until it is the size 
+indicated in the image above (Size 20)</p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">On your image, color over the areas indicated below...<br>
+	<Font face="Times New Roman">
+	<img border=0 width=348 height=277
+src="7/34.jpg" v:shapes="Picture_x0020_60"><br>Your image in the preview section should now look like this...<br>
+	<img border=0 width=406 height=267
+src="7/35.jpg" v:shapes="Picture_x0020_60"><br>Notice that the road now continues up to the building, which now appears that it 
+has a front instead of big brownish blob, and that there is no tree in the 
+middle of the road</font></p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">If your new building does not look as nice as mine, make adjustments to your 
+overlay area until it does - not that you will lose points if your new building 
+is a big smudge</p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Once your building looks good, click OK in the bottom right-hand corner of the 
+window...<br>
+	<img border=0 width=279 height=109
+src="7/37.jpg" v:shapes="Picture_x0020_60"><br>Photoshop returns you to the image with the area still selected...<br>
+	<img border=0 width=300 height=171
+src="7/38.jpg" v:shapes="Picture_x0020_60"></p></li>
+	<li>
+	<p class="MsoListParagraphCxSpMiddle" style=" line-height: normal;    ">Press Ctrl+D on the keyboard to deselect the area - the building should now be 
+gone and it should be impossible to tell where it was...<br>
+	<img border=0 width=447 height=298
+src="7/39.jpg" v:shapes="Picture_x0020_60"></p></li>
+</ol></font>
+<Font face="Times New Roman,serif">
+<hr>
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">While 
+Content-Aware Fill is an incredibly useful technique, as we have seen it does have 
+some issues. Here are a few things to keep in mind while using Content-Aware Fill:</p>
+<ol type="A" style="padding-left: 20px;">
+	<li>
+As we showed above with the junkyard image, Photoshop has a problem with images 
+	that have lots of different objects and details surrounding your selection. 
+Yes, you can use the Content-Aware Fill Edit menu option described above to 
+fine-tune your image, but there are still limits. For example, even if we use 
+the Content-Aware Fill Edit menu option we will be unable to convincingly remove the 
+dark red car with the tan top in the junkyard. The best we could do is fill the area with sand, but because we cannot recreate 
+the side of the white car next to it...<br>
+<Font face="Times New Roman">
+	<img border=0 width=334 height=185
+src="7/40.jpg" v:shapes="Picture_x0020_60"></font><br>
+we can never make it look right without resorting to other methods.</li>
+	<li>
+The 
+	larger the object being removed the lower the quality of the final result.</li>
+	<li>
+
+	Complicated patterns and lines (such as the bricks in the cat photo) may be distorted 
+	and not line up correctly (this is usually easy to fix).</li>
+	<li>
+The 
+	selection that you create with the Lasso Tool is important - changing the 
+	selection even slightly can sometimes result in a vastly different outcome.</li>
+	<li>
+Even 
+	if the end results are not perfect, using Content-Aware Fill can be a quick 
+	and easy first step, and then you can easily clean up the image using any of 
+	the other tools we have covered (fixing the brick lines in the cat image, for 
+	example, is super easy, barely an inconvenience).</li>
+	<li>
+It is 
+	very common for there to be additional clean-up after using Content-Aware 
+	Fill, especially if the background is 'busy', so don't be surprised.</li>
+</ol>
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">Let's take 
+a minute now to practice using Content-Aware Fill.</p>
+<ol start="22">
+	<li>
+	Go 
+	around the image and remove any people or objects that Content-Aware 
+	Fill will 
+	be quick and effective on<br>
+	HINT: Remember that Content-Aware Fill works best when the surrounding area 
+	is similar on both sides</font></li>
+	<li>
+<Font face="Times New Roman">
+Save your image</li>
+</ol>
+<p>For our next tool, we will be using the Remove Tool, which works in a 
+completely different way than any tool we have used so far. Head over to Step 8 to see how it works.</p>
+<hr>
+<div align="center">
+  <center>
+    <table border="0" bordercolor="#111111" width="100%" cellpadding="0">
+      <tr>
+        <td><font face="Times New Roman">
+      <p align="center"> <font size="2"><a href="step1.html">Introduction</a> <b>&nbsp;| </b> 
+		&nbsp;<a href="step2.html">Method 1: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Method 
+		2: Spot Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Method 3: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Method 
+		4: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Method 5: Content-Aware Move</a><br>
+		Method 6: Content-Aware Fill&nbsp; |&nbsp; 
+		<a href="step8.html">Method 7: Remove</a>&nbsp; |&nbsp; 
+		<a href="step9.html">Method 8: Generative Fill</a>&nbsp; |&nbsp;
+		<a href="step10.html">Method 9: Clone 
+      Stamp</a>&nbsp; 
+		|&nbsp; <a href="step11.html">Method 10: Combining Tools</a>&nbsp; |&nbsp; 
+		<a href="exercise.html">Removing Objects Exercise</a><br>
+        </font><a href="exercise.htm" style="color: d0d0d0!important">Exercise</a></td>
+      </tr>
+    </table>
+  </center>
+</div>
+</font>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Removing Objects Step 7: Content Aware Fill</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000
+}
+body {
+	background-color: #d0d0d0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.style2 {
+	color: #660000;
+	font-weight: bold;
+	font-style: italic;
+}
+table.MsoTableGrid {
+	border: 1.0pt solid windowtext;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#C0C0C0" vlink="#0000FF" link="#0000FF" alink="#0000FF">
+<Font face="Times New Roman">
+<table border="0" cellspacing="0" width="100%" height="1" bordercolor="#111111" cellpadding="0">
+  <tr>
+    <td width="100%" align="center" height="1"><font face="Times New Roman">
+      <p align="center"> <font size="2"><a href="step1.html">Introduction</a> <b>&nbsp;| </b> 
+		&nbsp;<a href="step2.html">Method 1: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Method 
+		2: Spot Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Method 3: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Method 
+		4: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Method 5: Content-Aware Move</a><br>
+		<a href="step7.html">Method 6: Content-Aware Fill</a>&nbsp; |&nbsp; 
+		Method 7: Remove&nbsp; |&nbsp; 
+		<a href="step9.html">Method 8: Generative Fill</a>&nbsp; |&nbsp;
+		<a href="step10.html">Method 9: Clone 
+      Stamp</a>&nbsp; 
+		|&nbsp; <a href="step11.html">Method 10: Combining Tools</a>&nbsp; |&nbsp; 
+		<a href="exercise.html">Removing Objects Exercise</a><br>
+        </font><a href="exercise.htm" style="color: d0d0d0!important">Exercise</a></td>
+  </tr>
+  <tr>
+    <td width="100%" align="center" height="1"><font size="6"><b>
+<Font face="Times New Roman">
+    Method 7: Remove Tool</font></b></font></td>
+  </tr>
+</table>
+</font>
+<Font face="Times New Roman,serif">
+<p class="MsoNormal" style="line-height:
+normal"> Content-Aware Fill is an amazing tool, but Photoshop has an 
+even more effective tool to get the job done: the Remove Tool. This tool allows 
+us to simply draw over an area of our image and Photoshop will magically remove 
+the object. Now, before you think 'that's what Content-Aware Fill does' - hang 
+on. The two actually work in completely different ways.</p>
+<p class="MsoNormal" style="line-height:
+normal"> While the Content-Aware Fill works by sampling the pixels 
+surrounding your selection, the Remove Tool uses machine learning (which is a 
+type of AI, or Artificial Intelligence) to analyze the image and determine how 
+best to not only remove the object, but to also fill the area with something 
+that makes sense for the image. While Content-Aware Fill works great on images 
+with consistent backgrounds (backgrounds that are similar throughout the entire 
+image), it doesn't work very well for complicated backgrounds, such as the cars 
+in the junkyard. However, the Remove Tool is specifically designed 
+to work with complex backgrounds, edges, and can even preserve the image's 
+perspective.</p>
+<div align="center">
+	<table border="4" width="80%" cellpadding="7">
+		<tr>
+			<td>
+<Font face="Times New Roman,serif">
+			<p class="MsoNormal" style="line-height:
+normal" align="center"> <b><font size="4">Quick side note here: WHAT IS AN IMAGE'S PERSPECTIVE?</font></b></p>
+			<p class="MsoNormal" style="line-height:
+normal"> Image perspective refers to the idea that some objects in an image are 
+			closer to the viewer than others. Take a look at this image...</p>
+			<p class="MsoNormal" style="line-height:
+normal" align="center"> 
+<Font face="Times New Roman">
+	<img border=0
+src="8/01.jpg" v:shapes="Picture_x0020_60" width="198" height="276"></font></p>
+			<p class="MsoNormal" style="line-height:
+normal">Along with being a clever image (get it? the paint is being poured on 
+			her head and thus coloring her hair...harhar), we have 7 distinct 
+			areas of identifiable distance, going from closest to farthest away 
+			they are:</p>
+			<ol>
+				<li>Closest: The girl</li>
+				<li>The vehicles</li>
+				<li>The roadway</li>
+				<li>The billboard with the paint can</li>
+				<li>The building on the right</li>
+				<li>The building on the left</li>
+				<li>Farthest away: The sky</li>
+</ol>
+			<p class="MsoNormal" style="line-height:
+normal"> As humans viewing the image, we are able to make the distinction 
+			between the different distances based on our experiences, the 
+			content of the image, and the shape of the objects. For example, one 
+			of the reasons we know the building on the left is the farthest 
+			object away 
+			from us is because, in the image, it is small and we know that 
+			buildings (compared to people) are not small. For the building to be 
+			small it must be far away.</p>
+			<p class="MsoNormal" style="line-height:
+normal"> So what does all this have to do with Photoshop? Well, when we edit 
+			images with Photoshop, the software is generally unable to take any of this 
+			into consideration. As far as Photoshop is concerned, there is no 
+			girl, no vehicles, no road, and no buildings - only pixels. When you 
+			make a change, Photoshop only worries about the colors in the image 
+			and their relation to each other. It does not care about the actual subject of the image.</p>
+			<p class="MsoNormal" style="line-height:
+normal"> When we apply machine learning to the image, Photoshop is able to 
+			identify that a person is in the foreground, as well as being able 
+			to identify vehicles, roads, and buildings, among other things. Not 
+			only that, but Photoshop recognizes that the girl is nearest to the 
+			viewer, as well as the other 6 image perspective distances. Because 
+			of this, when we make changes using the Remove Tool, Photoshop is 
+			able to adjust things so that the sense of depth within in the image 
+			is maintained. None of the other Photoshop tools we have covered can 
+			do this, which makes the Remove Tool a very powerful tool.</p>
+</font>
+			</td>
+		</tr>
+	</table>
+</div>
+<p class="MsoNormal" style="line-height:
+normal">We are going to use the Remove Tool on two different parts of the 
+Colosseum image so we can get a good look at what it is capable of doing.</p>
+<ol>
+	<li>
+	<p class="MsoNormal" style="line-height:
+normal"><Font face="Times New Roman">
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Right-click the 
+	Content-Aware Move Tool and then click the 
+	Remove Tool...<br></span>
+	<img border=0 width=231 height=108
+src="8/02.jpg" v:shapes="Picture_x0020_49"></font></p>
+</font>
+	<Font face="Times New Roman">
+	<li>Scroll to the top left-hand corner of the image and locate the yellow 
+building indicated in the image below...<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><br>
+	</span>
+	<img border=0 width=416 height=319
+src="8/03.jpg" v:shapes="Picture_x0020_49"></li>
+</ol>
+<p>We are going to remove this entire building. Such a large, complicated object 
+would be difficult to remove using the tools we have used so far, but watch how 
+easy it is using the Remove Tool.</p>
+<ol start="3">
+	<li>
+	Set the Remove Tool options bar to match the image below...<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">...<br>
+	</span>
+	<img border=0
+src="8/04.jpg" v:shapes="Picture_x0020_49" width="980" height="40"></li>
+</ol>
+<p>To select the building, we can either draw around the border and when we 
+release the mouse button Photoshop will fill in our selection (if you try this, 
+be sure you end at the same spot that you began to create an enclosed area), or 
+you can simply draw over the building as if we were 
+coloring it with the Brush Tool.</p>
+</font>
+<Font face="Times New Roman,serif">
+<ol start="4">
+	<li>
+	Click and drag to color over the building to select it, being sure to include some of the area 
+	surrounding the building as well...<br>
+<Font face="Times New Roman">
+	<img border=0 width=439 height=332
+src="8/05.jpg" v:shapes="Picture_x0020_49"></font></font><Font face="Times New Roman"><li>
+	When you release the mouse button, Photoshop will process the removal and 
+	you will see the Progress window...<br>
+	<img border=0 width=568 height=169
+src="8/06.jpg" v:shapes="Picture_x0020_49"><br>
+	When Photoshop finishes processing, the building will be gone...<br>
+	<img border=0 width=439 height=324
+src="8/07.jpg" v:shapes="Picture_x0020_49"><br>
+	Note that the more complicated the background area around your selection, 
+	the longer it will take Photoshop to process the removal</li>
+</ol>
+<p>Keep in mind that your final result may be slightly different from mine 
+(because you will have selected an area slightly different from my selection), 
+but you should see something close...</p>
+<div align="center">
+	<table border="0" width="884">
+		<tr>
+			<td align="center" width="50%">From this...</td>
+			<td align="center" width="32%">To this...</td>
+		</tr>
+		<tr>
+			<td>
+<Font face="Times New Roman">
+	<img border=0 width=439 height=325
+src="8/08.jpg" v:shapes="Picture_x0020_49" align="right"></font></td>
+			<td>
+<Font face="Times New Roman">
+	<img border=0 width=439 height=324
+src="8/07.jpg" v:shapes="Picture_x0020_49"></font></td>
+		</tr>
+	</table>
+</div>
+<p>Basically what has happened here is the machine learning within Photoshop was 
+not only able to identify that we wanted to remove a building, but noticed the 
+trees around the yellow building and the additional structures behind it and 
+developed objects to fill in the spot. However, you may notice that what 
+happened was not perfect. For example, look closely at this part of the image...</p>
+<p align="center">
+	<img border=0 width=463 height=257
+src="8/09.jpg" v:shapes="Picture_x0020_49"></p>
+<p>Photoshop probably did not do a very good job on the rocks or on the area directly 
+behind the yellow car. For me, Photoshop just kinda extended the yellow cars body (keep in 
+mind that it may or may not have done this to you depending on your selection). As it turns 
+out, one of the really cool thing about the Remove Tool is that if things 
+happened that we are not really happy with, we can simply reapply the tool and 
+get different results.</p>
+</font>
+	<Font face="Times New Roman">
+<ol start="6">
+	<li>
+	Press the left bracket (
+</font>
+	<Font face="Verdana">
+	<b>[</b></font><Font face="Times New Roman">
+	) on the keyboard twice to decrease the brush size to 10...<br>
+	<img border=0 width=379 height=73
+src="8/10.jpg" v:shapes="Picture_x0020_49"></font></li>
+	<li>
+	<Font face="Times New Roman">
+	Color over any area that you are unhappy with - in my image, I'm going to 
+	work with the newly created area behind the yellow car...<br>
+	<img border=0 width=420 height=211
+src="8/11.jpg" v:shapes="Picture_x0020_49"><br>
+	Photoshop will replace your selection with something different...<br>
+	<img border=0 width=360 height=195
+src="8/12.jpg" v:shapes="Picture_x0020_49"></font></li>
+	<li>
+	<Font face="Times New Roman">
+	Continue using the Remove Tool on the area until you have something that 
+	looks nice - this is what my final result looks like...<br>
+	<img border=0 width=423 height=232
+src="8/14.jpg" v:shapes="Picture_x0020_49"></font></li>
+</ol>
+<p><Font face="Times New Roman">I'm not happy with the way the long white 
+building on the left flows into the rock formation, but it will be difficult to 
+separate the two using the Remove Tool because Photoshop will continue to use 
+the objects on each side to identify what needs to be created to fill in the 
+spot. There is an easer way to make small, quick fixes like this that we will 
+explore with Method 9 two steps from now.</p>
+<Font face="Times New Roman,serif">
+<hr>
+</font>
+<p>Next, let's take a look at removing some objects near lines, shadows, and 
+areas we want to keep. </p>
+<ol start="9">
+	<li>On the right side of the image, locate the two spots 
+indicated below...<br>
+	<img border=0 width=201 height=187
+src="8/15.jpg" v:shapes="Picture_x0020_49"></li>
+</ol>
+<p>We are going to remove these two groups of vehicles and people at the same time. Right 
+now, the Remove Tool is set to process changes each time we release the mouse 
+button because we currently have the Remove after each stroke option activated, 
+as indicated on the Remove Tool options bar...</p>
+<p align="center">
+	<img border=0 width=268 height=78
+src="8/16.jpg" v:shapes="Picture_x0020_49"></p>
+<p>We need to deactivate this so that we can select two non-adjacent areas.</p>
+<ol start="10">
+	<li>
+	On the Remove Tool options bar, click the Remove after each stroke checkbox 
+	to remove the check and turn off that option...<br>
+	<img border=0 width=271 height=76
+src="8/17.jpg" v:shapes="Picture_x0020_49"></li>
+	<li>
+	Set the size of the brush to 15...<br>
+	<img border=0 width=323 height=83
+src="8/18.jpg" v:shapes="Picture_x0020_49"></li>
+	<li>
+	Make sure Add to brushed area is selected (the icon with the plus surrounded 
+	by a circle in the above image) - this will allow us to paint over two 
+	non-adjacent areas</li>
+	<li>
+	Paint over the left set 
+	of vehicles and people, being sure to include <Font face="Times New Roman,serif">
+	some of the area surrounding the vehicles as well...<br>
+</font>
+	<img border=0 width=317 height=208
+src="8/19.jpg" v:shapes="Picture_x0020_49"></li>
+	<li>
+	Paint over the set of vehicles and people on the 
+	right...<br>
+	<img border=0 width=291 height=200
+src="8/20.jpg" v:shapes="Picture_x0020_49"><br>
+	Be sure to include not only the vehicles but the shadows as well</li>
+</ol>
+<p>Note that if you paint over an area that you do not want to include, you can 
+click the Subtract from brushed area icon...</p>
+<p align="center">
+	<img border=0 width=312 height=73
+src="8/29.jpg" v:shapes="Picture_x0020_49"></p>
+<p align="left">and paint over that area to remove it from the selection.</p>
+<ol start="15">
+	<li>
+	When you have two selections you like, click the Apply to current strokes 
+	checkbox...<br>
+	<img border=0
+src="8/21.jpg" v:shapes="Picture_x0020_49"><br>
+	Photoshop will remove the selected items...<br>
+	<img border=0 width=475 height=382
+src="8/22.jpg" v:shapes="Picture_x0020_49"></li>
+</ol>
+<p>Pay particular attention to the vehicles from the left selection area that 
+were parked alongside the dirt. Notice that not only did Photoshop successfully 
+recognize that the vehicles were parked on asphalt, but it identified the dirt 
+and kept the shape of it intact...</p>
+<p align="center">
+	<img border=0
+src="8/23.jpg" v:shapes="Picture_x0020_49"></p>
+<p>So how does the Remove Tool compare to the Content-Aware Fill tool? The image 
+below is the same area we just worked with, except I used the Content-Aware Fill 
+tool...</p>
+<p align="center">
+	<img border=0
+src="8/24.jpg" v:shapes="Picture_x0020_49"></p>
+<p>Notice that are many more blemishes, areas of distortion, and errors (the red 
+arrows) in the 
+end result that will have to be fixed using some other removal method. Also 
+notice that the dirt area has been misshapen into a point instead of a nice 
+curve. Clearly, the Remove Tool works better.</p>
+<Font face="Times New Roman,serif">
+<hr>
+</font>
+<p>You may be wondering at this point what kind of job the Remove Tool would do 
+on an image with a complicated background such as our junkyard image...</p>
+<p align="center">
+	<img border=0 width=595 height=333
+src="8/25.jpg" v:shapes="Picture_x0020_49"></p>
+<p>To test what we get in this instance, I made two different selections of the 
+dark red car with tan roof...</p>
+<p align="center">
+	<img border=0
+src="8/26.jpg" v:shapes="Picture_x0020_49"></p>
+<p>and let Photoshop's Remove Tool fill in the space. This is what Photoshop 
+returned...</p>
+<p align="center">
+	<img border=0
+src="8/27.jpg" v:shapes="Picture_x0020_49" width="530" height="300">
+	<img border=0
+src="8/30.jpg" v:shapes="Picture_x0020_49" width="536" height="300"></p>
+<p>Note that in the first image on the left above that it kinda looks like 
+Photoshop thought the white vehicle was a boat or a surfboard. In the second 
+image above right, it is unclear where Photoshop got the information for the 
+image it created. Remember that the difference between the two images comes 
+entirely from the differences between the two selections that I made.</p>
+<p>On this is very clear - if you were sitting there thinking that the Remove Tool can do everything and 
+you'll just use that all of the time, as you can see that's not a good idea. It 
+didn't do a very good job here. We can use some of the other removal 
+methods to clean this image up and eventually get what we want, but this means 
+the possibility of going outside Photoshop's tools and using additional images 
+to solve our problems (for example, for this image we would need to find an 
+image that shows the side of a car similar to the white car that we could use as 
+source material and then fill in the gravel using other parts of this image).</p>
+</font>
+  <Font face="Times New Roman">
+	</font>
+<Font face="Times New Roman,serif">
+<p class="MsoListParagraphCxSpLast" style=" line-height: normal;    ">While 
+the Remove Tool does an amazing job, it obviously has 
+some issues. Here are a few things to keep in mind while using the Remove Tool:</p>
+<ol type="A" style="padding-left: 20px;">
+	<li>
+As with the Content-Aware Tool, Photoshop has a problem with images that have 
+lots of different objects and details surrounding the object you want to remove. 
+Objects that the machine learning can identify and recreate will work fine, 
+but when you are dealing with something specific, like having to recreate the side of 
+a specific model of car, the AI is unable to be that precise (for now).</li>
+	<li>
+The 
+	larger the object being removed the more likely Photoshop is to create 
+unnecessary extra material.</li>
+	<li>
+
+	Complicated patterns and lines may be distorted 
+	and not line up correctly. This is actually a common problem for all of Photoshop's 
+	tools that automatically remove things. If we compare the result of using 
+	Content-Aware Fill and the Remove Tool on the cat image,...<br>
+	<Font face="Times New Roman">
+	<img border=0
+src="8/28.jpg" v:shapes="Picture_x0020_49" width="600" height="216"><br>
+	you can see that the Remove Tool did about the same as Content-Aware Fill.</font></li>
+	<li>
+The 
+	selection that you paint with the Remove Tool is important. Even minor 
+changes to the 
+	starting selection will result in a different outcome. You need to be sure 
+to include some of the background around what you want to remove.</li>
+	<li>
+Even 
+	if the end results are not perfect, using the Remove Tool can be a quick and 
+easy first step. You can then clean up the image using any of the 
+other tools we have covered.</li>
+	<li>
+It is 
+	not uncommon for there to be additional clean-up after using the Remove Tool, especially if the background is 'busy', so don't be surprised.</li>
+</ol>
+<hr>
+</font><Font face="Times New Roman"></font><Font face="Times New Roman">
+<p>
+<Font face="Times New Roman,serif">
+Let's save 
+our work up to this point.</font></p>
+</font>
+<ol start="16">
+	<li>
+<Font face="Times New Roman">
+Save your image</li>
+</ol>
+<p>Our next tool, Generative Fill, not only allows us to remove objects, but can 
+generate new objects to replace them.</p>
+<hr>
+<div align="center">
+  <center>
+    <table border="0" bordercolor="#111111" width="100%" cellpadding="0">
+      <tr>
+        <td><font face="Times New Roman">
+      <p align="center"> <font size="2"><a href="step1.html">Introduction</a> <b>&nbsp;| </b> 
+		&nbsp;<a href="step2.html">Method 1: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Method 
+		2: Spot Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Method 3: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Method 
+		4: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Method 5: Content-Aware Move</a><br>
+		<a href="step7.html">Method 6: Content-Aware Fill</a>&nbsp; |&nbsp; 
+		Method 7: Remove&nbsp; |&nbsp; 
+		<a href="step9.html">Method 8: Generative Fill</a>&nbsp; |&nbsp;
+		<a href="step10.html">Method 9: Clone 
+      Stamp</a>&nbsp; 
+		|&nbsp; <a href="step11.html">Method 10: Combining Tools</a>&nbsp; |&nbsp; 
+		<a href="exercise.html">Removing Objects Exercise</a><br>
+        </font><a href="exercise.htm" style="color: d0d0d0!important">Exercise</a></td>
+      </tr>
+    </table>
+  </center>
+</div>
+</font>
+</body>
+</html>

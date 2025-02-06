@@ -1,0 +1,358 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Removing Objects Step 7: Content Aware Fill</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000
+}
+body {
+	background-color: #d0d0d0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.style2 {
+	color: #660000;
+	font-weight: bold;
+	font-style: italic;
+}
+table.MsoTableGrid {
+	border: 1.0pt solid windowtext;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#C0C0C0" vlink="#0000FF" link="#0000FF" alink="#0000FF">
+<Font face="Times New Roman">
+<table border="0" cellspacing="0" width="100%" height="1" bordercolor="#111111" cellpadding="0">
+  <tr>
+    <td width="100%" align="center" height="1"><font face="Times New Roman">
+      <p align="center"> <font size="2"><a href="step1.html">Introduction</a> <b>&nbsp;| </b> 
+		&nbsp;<a href="step2.html">Method 1: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Method 
+		2: Spot Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Method 3: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Method 
+		4: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Method 5: Content-Aware Move</a><br>
+		<a href="step7.html">Method 6: Content-Aware Fill</a>&nbsp; |&nbsp; 
+		<a href="step8.html">Method 7: Remove</a>&nbsp; |&nbsp; 
+		Method 8: Generative Fill&nbsp; |&nbsp;
+		<a href="step10.html">Method 9: Clone 
+      Stamp</a>&nbsp; 
+		|&nbsp; <a href="step11.html">Method 10: Combining Tools</a>&nbsp; |&nbsp; 
+		<a href="exercise.html">Removing Objects Exercise</a><br>
+        </font><a href="exercise.htm" style="color: d0d0d0!important">Exercise</a></td>
+  </tr>
+  <tr>
+    <td width="100%" align="center" height="1"><font size="6"><b>
+<Font face="Times New Roman">
+    Method 8: </font>Generative Fill</b></font></td>
+  </tr>
+</table>
+</font>
+<Font face="Times New Roman,serif">
+<p class="MsoNormal" style="line-height:
+normal"> Generative Fill is another AI tool built into Photoshop. We can use 
+Generative Fill to remove objects in much the same way that the Remove tool 
+works, but the real power of Generative Fill is that we can use it to create 
+objects that have nothing to do with our current image. For example, I could use 
+Generative Fill to add a unicorn to my Colosseum image...</p>
+<p class="MsoNormal" style="line-height:
+normal" align="center"> 
+	<Font face="Times New Roman">
+	<img border=0 width=424 height=228
+src="9/01.jpg" v:shapes="Picture_x0020_49"></font></p>
+<p class="MsoNormal" style="line-height:
+normal" align="left"> &nbsp;Or I could add a rocket ship...</p>
+<p class="MsoNormal" style="line-height:
+normal" align="center"> 
+	<Font face="Times New Roman">
+	<img border=0 width=338 height=346
+src="9/02.jpg" v:shapes="Picture_x0020_49"><br>
+<i><font size="2">Notice that Generative Fill even created an accurate shadow 
+that matches the other shadows in the image</font></i></font></p>
+<p class="MsoNormal" style="line-height:
+normal"> Or an Egyptian pyramid...</p>
+<p class="MsoNormal" style="line-height:
+normal" align="center"> 
+	<Font face="Times New Roman">
+	<img border=0 width=379 height=256
+src="9/03.jpg" v:shapes="Picture_x0020_49"></font></p>
+<p class="MsoNormal" style="line-height:
+normal"> Or even a giant gorilla riding a tricycle...</p>
+<p class="MsoNormal" style="line-height:
+normal" align="center"> 
+	<Font face="Times New Roman">
+	<img border=0 width=612 height=295
+src="9/04.jpg" v:shapes="Picture_x0020_49"></font></p>
+<p class="MsoNormal" style="line-height:
+normal"> In fact, I can use Generative Fill to add anything I can think of to my 
+image. Yes, this is fun to play with, but remember that we are interested in 
+removing things from our image. Before we move on, notice that not only did 
+Generative Fill accurately create what I wanted, but it specifically adjusted 
+the colors, lighting, shadows, tint, and so forth, of the objects so that they 
+look like they belong in the image.</p>
+<p class="MsoNormal" style="line-height:
+normal"> So, how does it work? When using Generative Fill, we simply make a 
+selection and type into the Generative Fill text box exactly what we want 
+Photoshop to generate. The objects we request are then created using Adobe 
+Firefly, which is Adobe's AI engine. The ability to create virtually anything we 
+can image means that Generative Fill is an incredibly powerful Photoshop tool.</p>
+<p class="MsoNormal" style="line-height:
+normal"> Ok, but can Generative Fill be used to simply remove objects? Turns 
+out.....sort of. Keep in mind that the function of Generative Fill is to add or 
+replace objects using simple text prompts to create realistic results. We can 
+use it to add pretty much anything we want, and to also replace things that are 
+in our image that we would prefer be something else (this is how we are going to 
+use Generative Fill). If we simply use Generative Fill to remove something, 
+Photoshop will actually apply the Remove Tool that we have already used.</p><hr>
+<p class="MsoNormal" style="line-height:
+normal"> We are going to use Generative Fill to its full potential by removing 
+the round area below...</p>
+<p class="MsoNormal" style="line-height:
+normal" align="center"> 
+	<Font face="Times New Roman">
+	<img border=0 width=637 height=306
+src="9/05.jpg" v:shapes="Picture_x0020_49"></font></p>
+<p class="MsoNormal" style="line-height:
+normal"> and replacing it with a nice, cool fountain. </p>
+<div align="center">
+	<table border="4" width="80%" cellpadding="3">
+		<tr>
+			<td>
+<Font face="Times New Roman,serif">
+			<p class="MsoNormal" style="line-height: normal">Ok, history lesson 
+			here (keep reading, this is interesting).</p>
+<p class="MsoNormal" style="line-height: normal">You may think that I want to 
+add a fountain just because it is an interesting object to add to this kind of 
+image, but I have another reason. Turns out that the round area in the image 
+above is a piece of Roman antiquity known as the <i>Meta Sudans</i>. During the 
+height of the Roman Empire, this was indeed the location of a fountain.</p>
+<p class="MsoNormal" style="line-height: normal">Apparently, water filled the 
+round area and there was a large, conic stonework in the center that the water 
+came out of. The water did not shoot out of the top like modern fountains (which 
+use pumps to push the water out...something that the ancient Romans did not 
+have), but instead it slowly leaked out - the fountain was said to sweat - and 
+cascaded down the sides of the stone.</p>
+<p class="MsoNormal" style="line-height: normal">If you are thinking 'that's not 
+very interesting' then think again. The ancient Romans managed to not only bury 
+water pipes without modern tools, but somehow got the water to come up out of 
+fountain. Let me say this again: WITH NO MODERN TOOLS. Could you figure out how 
+to do that?</font></td>
+		</tr>
+	</table>
+</div>
+<p class="MsoNormal" style="line-height:
+normal"> The first thing we need to do is make a selection of the round area.</p>
+<ol>
+	<li>
+	<p class="MsoNormal" style="line-height:
+normal">Sele<Font face="Times New Roman"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">ct 
+	the Elliptical Marquee Tool...<br></span>
+	<img border=0 width=60 height=86
+src="9/06.jpg" v:shapes="Picture_x0020_49"></font></p>
+</font>
+	<Font face="Times New Roman">
+	<li>Place the cursor at the center of the circular area...<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><br>
+	</span>
+	<img border=0 width=573 height=304
+src="9/07.jpg" v:shapes="Picture_x0020_49"></li>
+	<li>Press and hold the Alt key (remember that using the Alt key here will 
+	cause our oval to be drawn from the center out and draw an oval that is 
+	about the same size as the circular region and then release the mouse 
+	button...<br>
+	<img border=0 width=572 height=294
+src="9/08.jpg" v:shapes="Picture_x0020_49"><br>
+	Note that your oval does not have to match the round area perfectly</li>
+	<li>Click in the selection area and move it to adjust it so that it aligns 
+	better with the circular region (DO NOT include the round brick outline)</li>
+	<li>On the menu bar, click Select and then click Transform Selection...<br>
+	<img border=0 width=175 height=335
+src="9/09.jpg" v:shapes="Picture_x0020_49"><br>
+	This will add resize handles to your selection...<br>
+	<img border=0 width=456 height=214
+src="9/10.jpg" v:shapes="Picture_x0020_49"></li>
+	<li>Use the resize handles to adjust your selection area until it perfectly 
+	fits the circular region (again, DO NOT include the round bricks on the 
+	perimeter of the circular region)</li>
+	<li>When you are happy with your adjustments, press Enter to apply them - 
+	you should now have an awesome selection oval...<br>
+	<img border=0 width=458 height=255
+src="9/11.jpg" v:shapes="Picture_x0020_49"></li>
+</ol>
+<p>To use Generative Fill, we first need to locate the Contextual Task Bar. Look 
+around your Photoshop window and locate the Contextual Task Bar...</p>
+<p align="center">
+	<img border=0 width=580 height=41
+src="9/12.jpg" v:shapes="Picture_x0020_49"></p>
+<p>If you do not see the Contextual Task Bar, activate it in the Window menu...</p>
+<p align="center">
+	<img border=0 width=255 height=114
+src="9/14.jpg" v:shapes="Picture_x0020_49"></p>
+<p>To generate our new fountain, we simply need to click on the Generative Fill 
+text area and type a description of what we want.</p>
+<ol start="8">
+	<li>Click on the Generative Fill area...<br>
+	<img border=0 width=315 height=43
+src="9/15.jpg" v:shapes="Picture_x0020_49"><br>
+	It should now look like this...<br>
+	<img border=0 width=670 height=42
+src="9/16.jpg" v:shapes="Picture_x0020_49"></li>
+</ol>
+<p>We now need a good description of what we want to see. Photoshop will then 
+generate 3 different images that match our description. Keep in mind that the 
+more specific our description, the closer we will get to what we want. For 
+example, if I just type <i>fountain</i> as the prompt, this is what I get...</p>
+<p align="center">
+	<img border=0 width=620 height=176
+src="9/17.jpg" v:shapes="Picture_x0020_49"></p>
+<p align="left">As you can see, these are pretty generic fountains. We need to 
+use more descriptive terms. I'm going to use the term <i>Roman fountain</i> and 
+see what I get.</p>
+<ol start="9">
+	<li>In the Generative Fill text area, type Roman fountain...<br>
+	<img border=0 width=605 height=38
+src="9/18.jpg" v:shapes="Picture_x0020_49"></li>
+	<li>Press Enter - Photoshop will think for a moment and then generate the 
+	fountains</li>
+</ol>
+<p>You should immediately notice a few things. First, there is a fountain where 
+our selection area was...</p>
+<p align="center">
+	<img border=0 width=252 height=160
+src="9/19.jpg" v:shapes="Picture_x0020_49"></p>
+<p>Note that your fountain will look different from mine. When Photoshop applies 
+Generative Fill it does so in a unique way for each user, so the fountains I get 
+will be different from the fountains you get. Also note that the Properties 
+panel has opened above the Layers panel...</p>
+<p align="center">
+	<img border=0 width=272 height=321
+src="9/20.jpg" v:shapes="Picture_x0020_49"></p>
+<p>Pay attention to the Variations section at the bottom. Here you will see the 
+three different fountains that Generative Fill has created. Clicking on each one 
+will place it in your image.</p>
+<ol start="11">
+	<li>Click each fountain variation so that it is placed in your image to see 
+	what each looks like</li>
+</ol>
+<p>Second, you should notice that you have a new layer that contains your 
+fountains...</p>
+<p align="center">
+	<img border=0 width=256 height=224
+src="9/21.jpg" v:shapes="Picture_x0020_49"></p>
+<p>Having Photoshop create a new layer means that our generated objects can be 
+viewed or not, and are added non-destructively to our image. It also allows us 
+to make changes to only the generated object if we wish.</p>
+<hr>
+<p>Turns out that I'm not a big fan of any of the fountains Photoshop has to 
+offer. There are two different ways we can get more generated images. First, we 
+can click the Generate button on either the Contextual Task Bar (where we typed 
+the text <i>Roman fountain</i>), or on the Properties panel (see above image).
+</p>
+<ol start="12">
+	<li>Click the Generate button (in either place) to generate 3 new images - 
+	notice that the 3 new images are placed on the Properties panel...<br>
+	<img border=0
+src="9/22.jpg" v:shapes="Picture_x0020_49"></li>
+</ol>
+<p>All of the fountains that Generative Fill has created so far appear to modern 
+for our image. I'm going to try a different description and see what happens.</p>
+<ol start="13">
+	<li>In the Generative Fill text area, add the word <i>Ancient</i> to the 
+	description...<br>
+	<img border=0 width=249 height=43
+src="9/23.jpg" v:shapes="Picture_x0020_49"></li>
+	<li>Press Enter to generate new fountains...<br>
+	<img border=0 width=386 height=105
+src="9/24.jpg" v:shapes="Picture_x0020_49"></li>
+</ol>
+<p>Looking through these new fountains, I like the second one in the image 
+above, which looks like this in the image...</p>
+<p align="center">
+	<img border=0 width=642 height=372
+src="9/25.jpg" v:shapes="Picture_x0020_49"></p>
+<p>Keep in mind that your generated fountains will be different from mine. While 
+I found one that I like (notice that the fountain in the image above looks very 
+similar to the the description of the actual fountain that was in place during 
+Roman times), you may still have objects that you are unhappy with. This is not 
+a problem, you simply need to continue generating fountains, or perhaps changing 
+your description text, until you have a fountain you like.</p>
+<Font face="Times New Roman,serif">
+<div align="center">
+	<table border="4" width="80%" cellpadding="3">
+		<tr>
+			<td>
+<Font face="Times New Roman,serif">
+			<p class="MsoNormal" style="line-height: normal">A quick word here 
+			about the fountain you include in your image. You can certainly use 
+			one that has already been generated, but I encourage you to play 
+			around with the Generative Fill tool to see just what it is capable 
+			of doing. We have been using some pretty general descriptions, but 
+			something that you should try is to put in a very detailed 
+			description of what you want your fountain to look like. For 
+			example, you can type something like the following...</p>
+<p class="MsoNormal" style="line-height: normal" align="center"><i>stone 
+fountain with a brick wall on the outside and a tall spire in the middle that 
+has water flowing down the side and a wooden bridge to the center</i></p>
+<p class="MsoNormal" style="line-height: normal" align="left">Below is a 
+screenshot of one of the fountains that Generative Fill created using the above 
+description...</p>
+<p class="MsoNormal" style="line-height: normal" align="center">
+	<Font face="Times New Roman">
+	<img border=0 width=431 height=240
+src="9/26.jpg" v:shapes="Picture_x0020_49"></font></p>
+<p class="MsoNormal" style="line-height: normal">As you can see, I got exactly 
+what I asked for. You are free to generate any fountain you want, so unlock your 
+imagination and see what you can come up with.</font></td>
+		</tr>
+	</table>
+</div>
+</font>
+	<ol start="15">
+		<li>Find a fountain that you like and select it to include it in your 
+		image</li>
+</ol>
+</font><Font face="Times New Roman,serif">
+<hr>
+</font><Font face="Times New Roman"></font><Font face="Times New Roman">
+<p>
+<Font face="Times New Roman,serif">
+Let's save 
+our work up to this point.</font></p>
+</font>
+<ol start="16">
+	<li>
+<Font face="Times New Roman">
+Save your image</li>
+</ol>
+<p>For our final individual tool, we will be using the Clone Stamp Tool, which 
+is kind of a tool of last resort.</p>
+<hr>
+<div align="center">
+  <center>
+    <table border="0" bordercolor="#111111" width="100%" cellpadding="0">
+      <tr>
+        <td><font face="Times New Roman">
+      <p align="center"> <font size="2"><a href="step1.html">Introduction</a> <b>&nbsp;| </b> 
+		&nbsp;<a href="step2.html">Method 1: Brush/Pencil</a> <b>&nbsp;| </b> &nbsp;<a href="step3.html">Method 
+		2: Spot Healing Brush</a>&nbsp; |&nbsp; <a href="step4.html">Method 3: Healing Brush</a> <b>&nbsp;| </b> &nbsp;<a href="step5.html">Method 
+		4: 
+        Patch</a>&nbsp; |&nbsp; <a href="step6.html">Method 5: Content-Aware Move</a><br>
+		<a href="step7.html">Method 6: Content-Aware Fill</a>&nbsp; |&nbsp; 
+		<a href="step8.html">Method 7: Remove</a>&nbsp; |&nbsp; 
+		Method 8: Generative Fill&nbsp; |&nbsp;
+		<a href="step10.html">Method 9: Clone 
+      Stamp</a>&nbsp; 
+		|&nbsp; <a href="step11.html">Method 10: Combining Tools</a>&nbsp; |&nbsp; 
+		<a href="exercise.html">Removing Objects Exercise</a><br>
+        </font><a href="exercise.htm" style="color: d0d0d0!important">Exercise</a></td>
+      </tr>
+    </table>
+  </center>
+</div>
+</font>
+</body>
+</html>
